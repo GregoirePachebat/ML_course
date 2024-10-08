@@ -15,5 +15,10 @@ def compute_subgradient_mae(y, tx, w):
     # ***************************************************
     # INSERT YOUR CODE HERE
     # TODO: compute subgradient gradient vector for MAE
+    e = y - tx@w
+    sign_e = np.sign(e)
+    sign_e.reshape(-1, 1)
+
+    return np.sum(sign_e * tx, axis=0)/sign_e.shape[0]
     # ***************************************************
-    raise NotImplementedError
+

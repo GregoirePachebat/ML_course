@@ -11,5 +11,7 @@ def build_poly(x, degree):
     # polynomial basis function: TODO
     # this function should return the matrix formed
     # by applying the polynomial basis to the input data
+    
+    return np.vstack([x**d for d in range(degree+1)]).T
     # ***************************************************
-    raise NotImplementedError
+    
