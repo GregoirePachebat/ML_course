@@ -5,6 +5,8 @@ Least Square
 """
 import sys
 sys.path.append("../")
+sys.path.append("/Users/gregoirepachebat/Desktop/ML_course/labs/ex02")
+sys.path.append("../../")
 import numpy as np
 from ex02.template.costs import compute_loss
 
